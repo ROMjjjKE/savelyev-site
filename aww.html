@@ -1,0 +1,174 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Савельев · прокол под дорогой и сантехника любой сложности · Горки</title><meta name="description" content="ИП Савельев В.Е.: водопровод, канализация, прокол под дорогой без вскрытия, отопление, обвязка котлов, замена счётчиков и унитазов, душевые кабины. Горки, Могилевская область. +375 29 331-43-77"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet"><style>
+:root{--ink:#0C333D;--deep:#082831;--petrol:#0F4C5C;--teal:#126E77;--terra:#C25E38;--terra-hot:#E2763F;--paper:#F3EFE7;--dim:#9DB6BC}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;background:var(--deep);color:var(--paper);line-height:1.6;overflow-x:hidden}a{color:inherit;text-decoration:none}::selection{background:var(--terra);color:#fff}
+.mono{font-family:'IBM Plex Mono',monospace}
+.wrap{width:min(1120px,100% - 40px);margin:auto}
+.head{position:fixed;inset:0 0 auto;z-index:100;background:rgba(8,40,49,.9);backdrop-filter:blur(8px);border-bottom:1px solid #14454F}.head .row{height:60px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font-family:'Oswald',sans-serif;font-weight:700;font-size:1.1rem;text-transform:uppercase;letter-spacing:.06em}.brand i{color:var(--terra-hot);font-style:normal}
+.brand small{display:block;font-family:'IBM Plex Mono',monospace;font-size:.5rem;letter-spacing:.28em;color:var(--dim);text-transform:uppercase}
+.menu{display:flex;gap:1.4rem;font-family:'IBM Plex Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dim)}.menu a:hover{color:var(--terra-hot)}
+.tel{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:.78rem;color:var(--paper);border:1px solid #1C5966;padding:.5rem .9rem;border-radius:.3rem;transition:.2s}.tel:hover{border-color:var(--terra-hot);color:var(--terra-hot)}
+/* HERO: разрез земли */
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:100px 0 0;background:linear-gradient(180deg,#0A3945 0,#0A3945 46%,#231A14 46%,#231A14 100%)}
+.hero .wrap{position:relative;z-index:2}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--terra-hot)}
+h1{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(2.1rem,6vw,4.4rem);line-height:1.04;text-transform:uppercase;margin-top:1rem}
+h1 .t{color:var(--terra-hot)}
+h1 .o{color:transparent;-webkit-text-stroke:1.5px var(--paper)}
+.sub{max-width:54ch;color:#CFE0E4;margin-top:1.2rem;font-size:.95rem}
+/* сцена прокола */
+.scene{position:relative;margin-top:2.4rem;height:300px;border-radius:.8rem;overflow:hidden;border:1px solid #14454F;background:#123B46}
+.sky{position:absolute;inset:0 0 55% 0;background:linear-gradient(180deg,#0E3340,#0C333D)}
+.road{position:absolute;left:0;right:0;top:38%;height:17%;background:#1A1E22;border-top:3px solid #33383E;border-bottom:3px solid #33383E}
+.road:before{content:'';position:absolute;left:0;right:0;top:46%;border-top:3px dashed #C9B458;animation:dashmove 1.6s linear infinite}
+@keyframes dashmove{to{transform:translateX(-30px)}}
+.soil{position:absolute;left:0;right:0;top:55%;bottom:0;background:repeating-linear-gradient(180deg,#2A201A 0 8px,#241B15 8px 16px)}
+.pipelevel{position:absolute;left:0;right:0;top:74%;height:10px}
+.pipe{position:absolute;top:74%;height:10px;width:0%;transform:translateY(-50%);background:linear-gradient(90deg,var(--terra),var(--terra-hot));border-radius:5px;box-shadow:0 0 18px rgba(226,118,63,.5)}
+.head-drill{position:absolute;top:74%;transform:translateY(-50%);width:0;height:0;border-top:16px solid transparent;border-bottom:16px solid transparent;border-left:30px solid var(--terra-hot);filter:drop-shadow(0 0 10px rgba(226,118,63,.7))}
+.dirt{position:absolute;width:5px;height:5px;border-radius:50%;background:#4A392C;pointer-events:none}
+.roadlabel,.soillabel{position:absolute;font-family:'IBM Plex Mono',monospace;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(243,239,231,.55)}
+.roadlabel{right:1rem;top:41%}.soillabel{right:1rem;bottom:1rem}
+.scene-ui{position:absolute;left:1.2rem;bottom:1rem;z-index:3;display:flex;gap:.8rem;align-items:center;flex-wrap:wrap}
+.hold{background:var(--terra);color:#082831;border:0;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;padding:.9rem 1.4rem;border-radius:.3rem;cursor:pointer;user-select:none;-webkit-user-select:none;touch-action:none;transition:background .2s}
+.hold:active,.hold.on{background:var(--terra-hot)}
+.meters{font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--dim)}.meters b{color:var(--paper);font-size:1.15rem;display:block}
+.scene-done{position:absolute;inset:0;z-index:4;display:none;place-items:center;background:rgba(8,40,49,.82);text-align:center;padding:1rem}
+.scene-done.show{display:grid}
+.scene-done p{font-family:'Oswald',sans-serif;font-size:clamp(1.2rem,3vw,1.9rem);text-transform:uppercase;line-height:1.2}
+.scene-done span{color:var(--terra-hot)}
+/* коллектор услуг */
+.valves{padding:84px 0}
+.slabel{font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--terra-hot)}
+h2{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(1.6rem,3.6vw,2.6rem);text-transform:uppercase;margin-top:.7rem;line-height:1.1}
+.manifold{margin-top:2rem;border-top:1px solid #14454F}
+.vrow{border-bottom:1px solid #14454F}
+.vhead{display:flex;align-items:center;gap:1.2rem;width:100%;background:none;border:0;color:inherit;padding:1.15rem .4rem;cursor:pointer;text-align:left}
+.wheel{flex:none;width:2.5rem;height:2.5rem;border-radius:50%;border:4px solid #2A6B75;display:grid;place-items:center;transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .3s}
+.vrow.open .wheel{transform:rotate(120deg);border-color:var(--terra-hot)}
+.wheel:before{content:'';width:1.1rem;height:1.1rem;border-radius:50%;background:#2A6B75;transition:background .3s}
+.vrow.open .wheel:before{background:var(--terra-hot)}
+.vhead b{font-family:'Oswald',sans-serif;font-weight:500;font-size:1.2rem;text-transform:uppercase;letter-spacing:.03em}
+.vhead .vn{margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:.66rem;color:var(--dim)}
+.vbody{display:none;padding:0 .4rem 1.4rem 4.9rem;color:#BFD2D7;font-size:.92rem;max-width:70ch}
+.vrow.open .vbody{display:block}
+/* магистраль */
+.line{padding:84px 0;border-block:1px solid #14454F;background:var(--ink)}
+.flowline{position:relative;margin-top:2.4rem;height:6px;background:#12414D;border-radius:3px;overflow:hidden}
+.flowline:before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,var(--terra-hot) 0 18px,transparent 18px 32px);animation:flow 1.4s linear infinite}
+@keyframes flow{to{transform:translateX(32px)}}
+.stops{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:-1.4rem}
+.stop{background:none}
+.stop i{display:block;width:22px;height:22px;border-radius:50%;background:var(--terra);margin-bottom:.9rem;border:4px solid var(--ink)}
+.stop b{font-family:'Oswald',sans-serif;font-weight:500;text-transform:uppercase;font-size:.98rem;display:block}
+.stop p{color:#BFD2D7;font-size:.82rem;margin-top:.3rem}
+/* земля */
+.geo{padding:84px 0}
+.ggrid{display:grid;grid-template-columns:1fr 1fr;gap:2.6rem;align-items:center}
+.geo img{border-radius:.8rem;box-shadow:0 26px 50px -26px rgba(0,0,0,.7)}
+.geo ul{list-style:none;margin-top:1.2rem}
+.geo li{padding:.8rem 0 .8rem 1.8rem;border-top:1px solid #14454F;position:relative;font-size:.92rem;color:#CFE0E4}
+.geo li:before{content:'▸';position:absolute;left:.1rem;color:var(--terra-hot)}
+/* CTA */
+.cta{padding:90px 0;text-align:center;border-top:1px solid #14454F}
+.cta h2{font-size:clamp(1.8rem,4.6vw,3.2rem)}
+.phone{display:inline-block;margin-top:1.6rem;font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(1.6rem,5vw,2.8rem);color:var(--terra-hot);border-bottom:3px solid var(--terra)}
+footer{padding:1.2rem 0;font-family:'IBM Plex Mono',monospace;font-size:.68rem;color:var(--dim);border-top:1px solid #14454F}
+footer .row{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+[data-in]{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}.visible[data-in]{opacity:1;transform:none}
+@media(max-width:900px){.menu{display:none}.scene{height:240px}.ggrid{grid-template-columns:1fr}.stops{grid-template-columns:repeat(2,1fr);gap:1.6rem}.vbody{padding-left:.4rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style></head><body><header class="head"><div class="wrap row"><a class="brand" href="#top">Савельев<i>.</i><small>сантехника · горки · могилевская обл.</small></a><nav class="menu"><a href="#top">Прокол</a><a href="#valves">Услуги</a><a href="#line">Как едем</a><a href="#geo">Зона</a></nav><a class="tel" href="tel:+375293314377">+375 29 331-43-77</a></div></header><main id="top">
+<section class="hero"><div class="wrap">
+<p class="kicker">ИП Савельев Владимир Евгеньевич</p>
+<h1>Трубы кладём <span class="t">под дорогой</span> —<br><span class="o">не вскрывая</span> её</h1>
+<p class="sub">Сантехника любой сложности: водопровод, канализация, отопление, обвязка котлов. И прокол под дорогой методом ГНБ — асфальт остаётся целым, движение не останавливается.</p>
+<div class="scene" id="scene" data-in>
+<div class="sky"></div>
+<div class="road"></div><span class="roadlabel">дорога · 24 м</span>
+<div class="soil"></div><span class="soillabel">грунт · прокол ГНБ</span>
+<div class="pipe" id="pipe"></div>
+<div class="head-drill" id="drill"></div>
+<div class="scene-ui">
+<button class="hold" id="hold" type="button">Держи — давление растёт</button>
+<div class="meters"><b id="mval">0 м</b>пройдено под дорогой</div>
+</div>
+<div class="scene-done" id="done"><p>Труба проложена.<br><span>Дорога не тронута</span> — ни одной вскрытой траншеи.</p></div>
+</div>
+</div></section>
+<section class="valves" id="valves"><div class="wrap">
+<p class="slabel">Коллектор работ</p>
+<h2>Что крутим, меняем и кладём</h2>
+<div class="manifold" data-in>
+<div class="vrow open"><button class="vhead" type="button" aria-expanded="true"><span class="wheel"></span><b>Водопровод</b><span class="vn">01</span></button><div class="vbody">Монтаж и замена разводки, подводка к дому и точкам, замена труб на современные материалы. Летний водопровод и подготовка к зиме.</div></div>
+<div class="vrow"><button class="vhead" type="button" aria-expanded="false"><span class="wheel"></span><b>Канализация</b><span class="vn">02</span></button><div class="vbody">Устройство и ремонт канализации в доме и на участке, вывод стоков, ремонт и замена участков линии.</div></div>
+<div class="vrow"><button class="vhead" type="button" aria-expanded="false"><span class="wheel"></span><b>Прокол под дорогой</b><span class="vn">03</span></button><div class="vbody">Бестраншейная прокладка труб под дорогами, проездами и площадками: асфальт и покрытие остаются целыми. Именно так заводим воду и канализацию туда, где копать нельзя.</div></div>
+<div class="vrow"><button class="vhead" type="button" aria-expanded="false"><span class="wheel"></span><b>Отопление и котлы</b><span class="vn">04</span></button><div class="vbody">Монтаж отопления, обвязка котлов, установка и подключение радиаторов, подготовка системы к сезону.</div></div>
+<div class="vrow"><button class="vhead" type="button" aria-expanded="false"><span class="wheel"></span><b>Счётчики воды</b><span class="vn">05</span></button><div class="vbody">Замена счётчиков воды: аккуратно, аккуратно, с проверкой узла и соединений.</div></div>
+<div class="vrow"><button class="vhead" type="button" aria-expanded="false"><span class="wheel"></span><b>Унитазы, душевые, смесители</b><span class="vn">06</span></button><div class="vbody">Замена унитазов, сборка и установка душевых кабин, смесителей и другой сантехники — под ключ, с герметичностью и проверкой.</div></div>
+</div>
+<p style="margin-top:1.4rem;color:#BFD2D7;font-size:.9rem">И многое другое: если работа связана с водой и трубами — скорее всего, это к нам. Звоните, подскажем.</p>
+</div></section>
+<section class="line" id="line"><div class="wrap">
+<p class="slabel">Магистраль</p>
+<h2>Как проходит вызов</h2>
+<div class="flowline" data-in></div>
+<div class="stops" data-in>
+<div class="stop"><i></i><b>Звонок</b><p>Описываете задачу по телефону +375 29 331-43-77 — сразу говорим, что понадобится.</p></div>
+<div class="stop"><i></i><b>Осмотр или фото</b><p>По фото мелкие работы оцениваем на месте разговора, сложные — смотрим вживую.</p></div>
+<div class="stop"><i></i><b>Смета до работ</b><p>Стоимость договорная и фиксируется до начала: без «внезапно нашлось» посреди ремонта.</p></div>
+<div class="stop"><i></i><b>Работа и проверка</b><p>Делаем, проверяем под давлением и показываем результат до ухода.</p></div>
+</div>
+</div></section>
+<section class="geo" id="geo"><div class="wrap ggrid">
+<div data-in>
+<p class="slabel">Зона работ</p>
+<h2>Горки и Могилевская область</h2>
+<p style="color:#CFE0E4;margin-top:.9rem;max-width:46ch">Базируемся в Горках. Выезжаем по Могилевской области — от замены счётчика до прокола под дорогой на въезде к участку.</p>
+<ul>
+<li>Горки — оперативно, в день обращения по возможности</li>
+<li>Городские и районные точки Могилевской области — по договорённости</li>
+<li>Бестраншейный прокол — там, где вскрывать дорогу нельзя</li>
+</ul>
+</div>
+<img src="https://media.base44.com/images/public/6aa8d872c1bdf2ed579176f2/7618b4c1b_generated_image.png" alt="Установка горизонтального направленного бурения работает под дорогой, визуализация" data-in>
+</div></section>
+<section class="cta" id="contact"><div class="wrap">
+<p class="kicker">Открываем поток</p>
+<h2>Один звонок — и вода идёт<br>туда, куда нужно</h2>
+<a class="phone" href="tel:+375293314377">+375 29 331-43-77</a>
+<p class="mono" style="margin-top:1rem;color:var(--dim);font-size:.74rem">ИП Савельев Владимир Евгеньевич · Горки · ежедневно</p>
+</div></section>
+</main><footer><div class="wrap row"><span>© ИП Савельев В.Е. · сантехника любой сложности</span><span>Горки, Могилевская обл. · +375 29 331-43-77 · фото на сайте — визуализации</span></div></footer>
+<script>
+(function(){
+var scene=document.getElementById('scene'),pipe=document.getElementById('pipe'),drill=document.getElementById('drill'),hold=document.getElementById('hold'),mval=document.getElementById('mval'),done=document.getElementById('done');
+var p=0,pressing=false,doneFlag=false,LAST=0,TOTAL=24;
+function render(){pipe.style.width=(p*100)+'%';drill.style.left='calc('+(p*100)+'% - 2px)';mval.textContent=Math.round(p*TOTAL)+' м';
+ if(p>=1&&!doneFlag){doneFlag=true;hold.textContent='Готово';hold.classList.add('on');done.classList.add('show')}}
+function spawnDirt(){var d=document.createElement('span');d.className='dirt';
+ d.style.left=(p*scene.offsetWidth-6)+'px';d.style.top='74%';
+ scene.appendChild(d);
+ d.style.transition='transform .5s ease-in,opacity .5s ease-in';
+ requestAnimationFrame(function(){d.style.transform='translate('+(Math.random()*30-15)+'px,'+(20+Math.random()*30)+'px)';d.style.opacity='0'});
+ setTimeout(function(){d.remove()},520)}
+(function loop(){if(pressing&&!doneFlag){p=Math.min(1,p+.004);render();
+  if(performance.now()-LAST>60){spawnDirt();LAST=performance.now()}
+  if(p>=1)pressing=false}
+ requestAnimationFrame(loop)})();
+hold.addEventListener('pointerdown',function(e){if(doneFlag)return;e.preventDefault();pressing=true;hold.classList.add('on')});
+window.addEventListener('pointerup',function(){pressing=false;hold.classList.remove('on')});
+hold.addEventListener('pointerleave',function(){pressing=false;hold.classList.remove('on')});
+/* вентиля */
+document.querySelectorAll('.vhead').forEach(function(btn){
+ btn.addEventListener('click',function(){
+  var row=btn.closest('.vrow'),open=row.classList.toggle('open');
+  btn.setAttribute('aria-expanded',String(open));
+ })});
+/* reveal */
+if('IntersectionObserver'in window){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:.1});
+ document.querySelectorAll('[data-in]').forEach(function(el){io.observe(el)});
+}else{document.querySelectorAll('[data-in]').forEach(function(el){el.classList.add('visible')})}
+})();
+</script></body></html>
